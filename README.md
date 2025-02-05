@@ -7,6 +7,7 @@ A repository containing installation scripts for the ZScaler intermediate CA cer
 - [1. Introduction](#1-introduction)
     - [Why is this needed?](#why-is-this-needed)
 - [2. Supported Operating Systems](#2-supported-operating-systems)
+- [3. Usage](#3-usage)
 
 ---
 
@@ -28,5 +29,11 @@ Scripts in this repository currently support the following Operating Systems:
 
 * Ubuntu Linux
 * Alpine Linux
-* Windows 11 (via podman and Windows Subsystem for Linux)
+* Fedora Linux 
+  * Includes Windows support via podman machines
+
+---
+
+# 3. Usage
+
 
