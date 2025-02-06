@@ -4,17 +4,17 @@ A repository containing installation scripts for the ZScaler intermediate CA cer
 ---
 
 - [1. Introduction](#1-introduction)
-    - [Why is this needed?](#why-is-this-needed)
+  - [Why is this needed?](#why-is-this-needed)
 - [2. Supported Operating Systems](#2-supported-operating-systems)
 - [3. Usage](#3-usage)
-    - [Docker Image Build](#docker-image-build)
-    - [Colima on MacOS](#colima-on-macos)
+  - [Docker Image Build](#docker-image-build)
+  - [Colima on MacOS](#colima-on-macos)
 - [4. Using the System CA Store With Node or Python](#4-using-the-system-ca-store-with-node-or-python)
-      - [Dockerfile](#dockerfile)
+    - [Dockerfile](#dockerfile)
 
 ---
 
-# 1. Introduction
+## 1. Introduction
 
 This project is intended to house installation scripts that assist with installing the default ZScaler intermediate CA Certificate into virtualized or containerized images. The script is written in
 a way that it can be run in any bourne shell (i.e. bsh and its descendants), since some container images do not come with a full bash implementation.
@@ -27,7 +27,7 @@ Because of this, we aim to provide easy to use scripts that install the certific
 
 --- 
 
-# 2. Supported Operating Systems
+## 2. Supported Operating Systems
 
 Scripts in this repository currently support the following Operating Systems:
 
@@ -39,7 +39,7 @@ Scripts in this repository currently support the following Operating Systems:
 
 ---
 
-# 3. Usage
+## 3. Usage
 
 ### Docker Image Build
 
@@ -76,7 +76,7 @@ Please note that you will still need to install the CA chain in any docker conta
 
 ---
 
-# 4. Using the System CA Store With Node or Python
+## 4. Using the System CA Store With Node or Python
 
 Since both nodejs and python use their own internal CA stores, we must set some environment variables to ensure that they utilize the system CA trust chains. 
 
