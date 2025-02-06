@@ -1,5 +1,16 @@
 #!/bin/bash
 
+#################################################################
+#   Author: Jeff Hagadorn 
+#   Purpose: This script installs the ZScaler default root CA
+#            chain into a system's trust store. This is needed
+#            when building development container images or 
+#            virtual machines on systems using ZScaler.
+#
+#            See the readme for more information.
+#################################################################
+
+
 # Store cert in variable inline to make the script more portable.
 ZS_PEM=$(cat <<EOF
 -----BEGIN CERTIFICATE-----
